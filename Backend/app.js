@@ -3,9 +3,10 @@ const app = express();
 require("dotenv-defaults").config();
 const login = require("./routes/login");
 const cors = require("cors");
-
+var morgan = require("morgan");
 app.use(cors());
 app.use(express.json());
+app.use(morgan('tiny'))
 
 app.get('/',(req,res)=>{
  return res.status(200).json({"message":'Root endpoint'});
