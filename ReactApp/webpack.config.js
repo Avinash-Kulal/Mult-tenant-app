@@ -11,6 +11,7 @@ module.exports = {
  target: "web",
  devServer: {
   static: './dist',
+  port:3000
 },
  resolve: {
   extensions: ['.js', '.jsx']

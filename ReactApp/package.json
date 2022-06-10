@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo 'Webpack build started' && webpack",
-    "start": "webpack-dev-server --config webpack.config.js -d --progress true",
+    "start": "webpack-dev-server --config webpack.config.js",
     "watch": "webpack --watch"
   },
   "author": "Avinash",
