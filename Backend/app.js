@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/',(req,res)=>{
- return res.send('Root endpoint');
+ return res.status(200).json({"message":'Root endpoint'});
 })
 
 app.use('/login',login);
