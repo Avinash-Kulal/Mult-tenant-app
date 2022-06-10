@@ -31,7 +31,7 @@ module.exports = {
   ]
  },
  //devtool: "eval-cheap-module-source-map",
- devtool: 'inline-source-map',
+ devtool: 'eval-cheap-module-source-map',
  plugins: [
   new CopyPlugin({
    patterns: [
