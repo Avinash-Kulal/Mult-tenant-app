@@ -14,7 +14,14 @@ const Login = (props) =>{
  const [password,setPassword] = useState('');
 
  const handleLogin = (evt)=>{
+  const urlParams = new URLSearchParams(window.location.search);
+  const url = urlParams.get('server') || "http://localhost:3636/"
+  console.log("SERVER URL ",url);
   evt.preventDefault();
+  fetch(url)
+  .then((res)=>res.json())
+  .then(console.log)
+  .catch(console.log)
  }
  return (
   <LoginContainer>
