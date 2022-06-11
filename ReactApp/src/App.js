@@ -2,6 +2,7 @@ import React,{ useState,useEffect } from "react";
 import Login from "./components/Login";
 import Header from "./components/Header";
 import Welcome from "./components/Welcome";
+import Register from "./components/register";
 
 const App = () => {
   const [urlParam,setUrlParam] = useState('');
@@ -20,7 +21,7 @@ const App = () => {
     <Header/>
     { ((urlParam && urlParam.module === 'login') && <Login/> )
       ||
-    ( (urlParam && urlParam.module === 'register') && 0)
+    ( (urlParam && urlParam.module === 'register') && <Register/>)
      ||
     <Welcome/>}
               
