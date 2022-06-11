@@ -24,6 +24,7 @@ const Header = ()=>{
    Demo App <br/>
   </Head>
     <Navigation>
+        <a href="/">Home</a> &nbsp;
         <a href="?module=login">Login</a> &nbsp;
         <a href="?module=register">Register</a>
     </Navigation>
