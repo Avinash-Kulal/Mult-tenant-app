@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo 'Webpack build started' && webpack",
     "start": "webpack-dev-server --config webpack.config.js",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "serve": "serve ./dist"
   },
   "author": "Avinash",
   "license": "ISC",
@@ -35,6 +36,7 @@
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "serve": "^13.0.2",
     "styled-components": "^5.3.5"
   }
 }
