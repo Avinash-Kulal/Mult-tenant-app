@@ -19,7 +19,7 @@ const Login = (props) =>{
   console.log("SERVER URL ",url);
   evt.preventDefault();
   fetch(url)
-  .then((res)=>res.json())
+    .then((res)=>res.json())
   .then(console.log)
   .catch(console.log)
  }

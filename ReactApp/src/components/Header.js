@@ -11,14 +11,24 @@ const Head  = styled.div`
  margin:5px;
  color:white;
  `
-
+const Navigation = styled.div`
+    font-family:arial;
+    margin:10px;
+`;
 const Header = ()=>{
 
  return (
+<React.Fragment>
   <Head>
    <hr/>
-   Demo App
+   Demo App <br/>
   </Head>
+    <Navigation>
+        <a href="/">Home</a> &nbsp;
+        <a href="?module=login">Login</a> &nbsp;
+        <a href="?module=register">Register</a>
+    </Navigation>
+  </React.Fragment>
  )
 }
 export default Header;
